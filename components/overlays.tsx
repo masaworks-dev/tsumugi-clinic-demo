@@ -117,7 +117,7 @@ export function Overlays() {
 
       <Dialog kind="line" title="LINEで予約（見本）">
         <p className="demo-note">
-          デモのため、実際のLINEは開きません。本番では友だち追加すると、LINEの中で予約でき、下のようなお知らせが届きます。
+          デモのため、実際のLINEは開きません。本番では友だち追加すると、LINEの中で予約でき、下のようなお知らせが届きます。トーク画面を操作できるデモもあります。
         </p>
         <LinePhone label="LINEのトーク画面の見本">
           <div className="bub">
@@ -129,10 +129,12 @@ export function Overlays() {
           <div className="bub">【順番受付】まもなく順番です。あと2人で呼び出します。院内または近くでお待ちください。</div>
         </LinePhone>
         <div className="acts">
-          <span />
-          <OpenButton overlay={{ kind: 'book' }} className="btn y">
-            WEB予約のデモを試す
+          <OpenButton overlay={{ kind: 'book' }} className="btn">
+            WEB予約のデモ
           </OpenButton>
+          <Link href="/line/" className="btn g">
+            LINEのデモを操作する
+          </Link>
         </div>
       </Dialog>
 

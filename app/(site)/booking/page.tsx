@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { OpenButton } from '@/components/chrome';
 import { PageHead, SecHead } from '@/components/layout-parts';
 
@@ -35,9 +36,9 @@ export default function BookingPage() {
               <span className="num">02</span>
               <h2>LINEで予約</h2>
               <p>友だち追加すると、LINEの中で予約でき、確認と前日のお知らせが届きます。順番受付の呼び出しも届きます。</p>
-              <OpenButton overlay={{ kind: 'line' }} className="btn g">
-                LINEの見本を見る
-              </OpenButton>
+              <Link href="/line/" className="btn g">
+                LINEのデモを試す
+              </Link>
             </div>
             <div className="way">
               <span className="num">03</span>
