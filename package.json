@@ -7,7 +7,7 @@
     "dev": "next dev",
     "build": "next build",
     "typecheck": "tsc --noEmit",
-    "test": "node --test --experimental-strip-types lib/hours.test.ts"
+    "test": "node --test --experimental-strip-types lib/*.test.ts"
   },
   "dependencies": {
     "next": "16.4.2",
